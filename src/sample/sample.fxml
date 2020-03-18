@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="sample.css" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1">
+    <stylesheets>
+        <URL value="@sample.css" />
+    </stylesheets>
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <BorderPane prefHeight="200.0" prefWidth="200.0">
+         <top>
+            <GridPane fx:id="buttons" prefHeight="63.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="293.0" minWidth="10.0" prefWidth="152.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="442.0" minWidth="10.0" prefWidth="133.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="442.0" minWidth="10.0" prefWidth="331.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="30.0" prefWidth="70.0" text="Add" GridPane.halignment="CENTER" />
+                  <Button layoutX="48.0" layoutY="27.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="30.0" prefWidth="80.0" text="Remove" GridPane.columnIndex="1" />
+                  <Button layoutX="48.0" layoutY="27.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0" text="?" GridPane.columnIndex="2" GridPane.halignment="RIGHT">
+                     <GridPane.margin>
+                        <Insets />
+                     </GridPane.margin>
+                  </Button>
+               </children>
+               <padding>
+                  <Insets left="10.0" right="10.0" />
+               </padding>
+            </GridPane>
+         </top>
+         <left>
+            <GridPane fx:id="data" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="342.0" prefWidth="123.0" BorderPane.alignment="CENTER">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints maxHeight="63.0" minHeight="10.0" prefHeight="47.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label prefHeight="32.0" prefWidth="72.0" text="Data">
+                     <font>
+                        <Font name="System Bold" size="22.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets />
+                     </GridPane.margin>
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                  </Label>
+                  <Label text="Cost" GridPane.halignment="LEFT" GridPane.rowIndex="1">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets left="25.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <Label layoutX="44.0" layoutY="78.0" text="Goods" GridPane.halignment="LEFT" GridPane.rowIndex="2">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets left="25.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <Label layoutX="10.0" layoutY="108.0" text="Employees" GridPane.halignment="LEFT" GridPane.rowIndex="3">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets left="25.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <Label layoutX="10.0" layoutY="138.0" text="Departments" GridPane.halignment="LEFT" GridPane.rowIndex="4">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets left="25.0" />
+                     </GridPane.margin>
+                  </Label>
+               </children>
+            </GridPane>
+         </left>
+         <center>
+            <GridPane fx:id="main" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="342.0" prefWidth="478.0" BorderPane.alignment="CENTER">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="138.0" minWidth="10.0" prefWidth="138.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="369.0" minWidth="10.0" prefWidth="228.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="162.0" minWidth="10.0" prefWidth="138.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints maxHeight="140.0" minHeight="0.0" prefHeight="140.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="256.0" minHeight="10.0" prefHeight="125.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="133.0" minHeight="10.0" prefHeight="77.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                     <ImageView fitHeight="236.0" fitWidth="203.0" preserveRatio="true" smooth="true" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+                         <image>
+                             <Image url="https://cdn0.iconfinder.com/data/icons/market-and-economics-17/64/66-512.png" />
+                         </image>
+                     </ImageView>
+                   <ImageView fitHeight="52.0" fitWidth="38.0" preserveRatio="true" smooth="true" GridPane.halignment="LEFT" GridPane.valignment="TOP">
+                       <image>
+                           <Image url="https://cdn1.iconfinder.com/data/icons/business-office-41/64/x-09-512.png" />
+                       </image>
+                   </ImageView>
+                  <Label text="Employees" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="TOP">
+                     <GridPane.margin>
+                        <Insets top="5.0" />
+                     </GridPane.margin>
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label text="&gt;45 years" GridPane.halignment="RIGHT" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <Label text="28-45 years" GridPane.columnIndex="2" GridPane.rowIndex="1" GridPane.valignment="TOP">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <Label text="&lt;28 years" GridPane.columnIndex="2" GridPane.rowIndex="2" GridPane.valignment="TOP">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets bottom="20.0" left="20.0" right="20.0" />
+                     </GridPane.margin>
+                  </Label>
+
+               </children>
+            </GridPane>
+         </center></BorderPane>
+   </children>
+</GridPane>
